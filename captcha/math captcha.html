@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+        <title>Filozofski fakultet</title>
+        <link rel="stylesheet" type="text/css" href="stil1.css"/>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta name="keywords" content="zenica;fakultet,filozofski"/>
+        <script src="index2.js"></script>
+		<title>SVG format datoteke</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link href='convert.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stil1.css"/>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta name="keywords" content="zenica;fakultet,filozofski"/>
+        <script src="index2.js"></script>
+        <link rel="stylesheet" href="style1.css">
+        <script src="index2.js"></script>
+		<script type="text/javascript">
+
+            function addNums(){
+            
+                var answer = document.getElementById("answer").value;
+            
+                var digit1 = parseInt(document.getElementById("digit1").innerHTML);
+            
+                var digit2 = parseInt(document.getElementById("digit2").innerHTML);
+            
+                var sum = digit1 + digit2;
+            
+                if(answer == ""){
+            
+                    alert("Dodaj brojeve");
+            
+                }else if(answer != sum){
+            
+                    alert("Greška");
+            
+                }else{
+            
+                    // all good now! //
+            
+                    document.getElementById("status").innerHTML = "Ispravno, sada ste sigurni u korištenju forme";
+            
+                    document.getElementById("answer").value = "";
+            
+                }
+            }
+            
+            function randomNums(){
+                var rand_num1 = Math.floor(Math.random() * 10) + 1;
+                var rand_num2 = Math.floor(Math.random() * 10) + 1;
+                document.getElementById("digit1").innerHTML = rand_num1;
+                document.getElementById("digit2").innerHTML = rand_num2;
+            }
+            </script>
+            <style>
+                .example{background:#f4f5f6;padding:3px;margin:15px 0 20px; width: 600px; height: 300px;}
+                .codebox{background:#fff;border:1px solid #ddd}
+                .codebox-title{height:42px;padding-left:12px;border-bottom:1px solid #ddd;background:#f5f5f5}
+                .codebox-title h4{margin:0;font-size:18px;line-height:40px;float:left;font-weight:600}
+                .shadow{background:#F7F8F9;padding:3px;margin:15px 0 20px}
+                .color-box .shadow{margin:0}
+                .syntax{color:#2f4959; padding:15px 20px; background:#F9F9FA; border:1px solid #ddd}
+                .demo-box{margin-top:15px}
+                </style>
+    </head>
+<body onload="randomNums();">
+	<div id="header">
+		<div class="section">
+			<div class="logo">
+				<a href="index.html">Nazad</a>
+			</div>
+		</div>
+	</div>
+	<div id="body">
+		<strong style="position: fixed;">Dodaj brojeve</strong>
+            <br>
+            <div id="digit1"></div> +
+            <div id="digit2"></div>
+            <input type="text" id="answer" />
+            <input type="submit" value="Add Numbers" onclick="addNums();" />
+
+            <div id="status"></div>
+            <div class="example">
+                <div class="codebox multi-style-mode">
+                    <div class="codebox-title">
+                        <h4>Kod</h4>
+                        
+                    </div>
+                    <pre class="syntax-highlighter line-numbers scroll large"><code class="language-html">
+    &lt; strong style="position: fixed;" &lt; Dodaj brojeve &lt;/strong &gt;
+    &lt; div id="digit1" &gt; &lt;/div &gt;
+    &lt; p> + &lt;/p &gt;
+    &lt; div id="digit2"> &lt;/div &gt;
+    &lt; input type="text" id="answer" / &gt;
+    &lt;input type="submit" value="Add Numbers" onclick="addNums();" /
+     &gt;</code></pre>
+                </div>
+</div>
+        </div>
+        </div>
+	<div id="footer">
+		<div>
+			<p>
+				&copy; copyright 2022
+			</p>
+		</div>
+	</div>
+</body>
+</html>
